@@ -24,8 +24,8 @@ DROP SCHEMA IF EXISTS assert CASCADE;
 DROP SCHEMA IF EXISTS unit_tests CASCADE;
 DROP DOMAIN IF EXISTS test_result CASCADE;
 
-CREATE SCHEMA assert AUTHORIZATION postgres;
-CREATE SCHEMA unit_tests AUTHORIZATION postgres;
+CREATE SCHEMA assert;
+CREATE SCHEMA unit_tests; 
 CREATE DOMAIN test_result AS text;
 
 CREATE TABLE unit_tests.tests
